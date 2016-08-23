@@ -92,7 +92,7 @@ public extension CurrencyType {
         formatter.currencyCode = code
         formatter.locale = locale
         formatter.numberStyle = style
-        formatter.maximumFractionDigits = scale
+        formatter.maximumFractionDigits = 0
         formatter.currencySymbol = symbol ?? locale.currencySymbol
         
         return { formatter.stringFromNumber($0)! }
